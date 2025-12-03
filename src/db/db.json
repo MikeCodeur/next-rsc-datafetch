@@ -25,16 +25,6 @@
       "category": "furniture",
       "createdAt": "2024-04-25T05:56:06.593Z",
       "updadtedAt": "2024-10-30T10:16:40.902Z"
-    },
-    {
-      "id": "3",
-      "title": "ggggggggg",
-      "price": 10,
-      "description": "ggggggggggggggggggg",
-      "category": "default",
-      "quantity": 10,
-      "createdAt": "2025-12-03T18:21:07.323Z",
-      "updadtedAt": "2025-12-03T18:21:19.365Z"
     }
   ],
   "todos": [
@@ -48,9 +38,9 @@
     {
       "id": 2,
       "title": "Apprendre Next",
-      "isCompleted": true,
+      "isCompleted": false,
       "createdAt": "2024-10-30T10:16:40.902Z",
-      "updadtedAt": "2025-12-03T18:21:02.884Z"
+      "updadtedAt": "2024-10-30T10:16:40.902Z"
     }
   ]
 }
