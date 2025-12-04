@@ -1,4 +1,26 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-export default nextConfig
+import createMDX from '@next/mdx'
+
+const nextConfig = {
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'via.placeholder.com',
+        port: '',
+      },
+    ],
+  },
+  experimental: {
+    taint: true,
+  },
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+}
+
+const withMDX = createMDX()
+
+export default withMDX(nextConfig)
