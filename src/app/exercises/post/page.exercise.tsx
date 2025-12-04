@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {Post} from '@/lib/type'
 // 🐶 Importe `useEffect` et `useState` car ils seront utiles pour récupérer les datas
 // 🤖 import {useEffect, useState} from 'react'
