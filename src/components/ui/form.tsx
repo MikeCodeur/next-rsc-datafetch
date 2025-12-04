@@ -112,7 +112,6 @@ const FormControl = React.forwardRef<
       ref={ref}
       id={formItemId}
       aria-describedby={
-        // eslint-disable-next-line unicorn/no-negated-condition
         !error
           ? `${formDescriptionId}`
           : `${formDescriptionId} ${formMessageId}`
@@ -134,7 +133,7 @@ const FormDescription = React.forwardRef<
     <p
       ref={ref}
       id={formDescriptionId}
-      className={cn('text-sm text-muted-foreground', className)}
+      className={cn('text-muted-foreground text-sm', className)}
       {...props}
     />
   )
@@ -149,7 +148,6 @@ const FormMessage = React.forwardRef<
   const body = error ? String(error?.message) : children
 
   if (!body) {
-    // eslint-disable-next-line unicorn/no-null
     return null
   }
 
@@ -157,7 +155,7 @@ const FormMessage = React.forwardRef<
     <p
       ref={ref}
       id={formMessageId}
-      className={cn('text-sm font-medium text-destructive', className)}
+      className={cn('text-destructive text-sm font-medium', className)}
       {...props}
     >
       {body}

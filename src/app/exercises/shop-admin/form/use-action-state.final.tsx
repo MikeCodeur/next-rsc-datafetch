@@ -18,7 +18,6 @@ import {toast} from 'sonner'
 
 import {Label} from '@/components/ui/label'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function ProductForm({product}: {product?: Product}) {
   const [state, formAction] = useActionState(onSubmitAction, {
     error: false,

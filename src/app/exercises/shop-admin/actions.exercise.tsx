@@ -33,7 +33,6 @@ export async function onSubmitAction(
   return {error: false, message: 'Success'}
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function logZodError(data: FormData) {
   const formData = Object.fromEntries(data)
   const parsed = formSchema.safeParse(formData)

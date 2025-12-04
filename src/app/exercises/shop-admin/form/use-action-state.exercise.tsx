@@ -19,7 +19,6 @@ import {CategoriesEnum, Product} from '@/lib/type'
 //import {useActionState} from 'react'
 import {Label} from '@/components/ui/label'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function ProductForm({product}: {product?: Product}) {
   // 🐶 Utilise le hook `useActionState` pour gérer l'état de notre formulaire
   // const [state, formAction] = useActionState
