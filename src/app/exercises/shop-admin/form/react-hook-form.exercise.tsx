@@ -22,9 +22,9 @@ import {
 } from '@/components/ui/form'
 
 import {CategoriesEnum, Product} from '@/lib/type'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 import {persistProduct as persistProductAction} from '../actions'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 import {toast} from 'sonner'
 import z from 'zod'
 
@@ -45,7 +45,6 @@ export const formSchema = z.object({
   // }),
 })
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export default function ProductForm({product}: {product?: Product}) {
   const form = useForm<Product>({
     // 🐶 Applique le `ZodResolver`
@@ -79,7 +78,6 @@ export default function ProductForm({product}: {product?: Product}) {
     Number.isNaN(Number(key))
   )
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async function onSubmit(values: Product) {
     // 🐶 Appelle `persistProductAction` le server action qui ADD/UPDATE un produit
     // const isUpdate = values.id ? true : false
