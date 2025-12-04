@@ -3,7 +3,6 @@ import {cn} from '@/lib/utils'
 import {Todo} from '@/lib/type'
 
 export default function TodoItem({todo}: {todo: Todo}) {
-  // eslint-disable-next-line unicorn/consistent-function-scoping
   const handleChange = async (isCompleted: boolean) => {
     console.log('isCompleted', isCompleted)
   }

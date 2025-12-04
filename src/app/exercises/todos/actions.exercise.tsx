@@ -1,7 +1,6 @@
 // 🐶 Ajoute la directive `use server` pour spécifier que nous faisons des server actions
 // 🤖 'use server'
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import {addTodo as addTodoDao} from '@/db/sgbd'
 import {AddTodo} from '@/lib/type'
 

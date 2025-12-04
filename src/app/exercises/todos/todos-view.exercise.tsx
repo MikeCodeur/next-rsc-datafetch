@@ -1,10 +1,10 @@
 'use client'
 import {Input} from '@/components/ui/input'
 import {Button} from '@/components/ui/button'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 import {addTodo as addTodoDao} from '@/db/sgbd'
 import TodoItem from './todo-item'
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 import {toast} from 'sonner'
 import {AddTodo, Todo} from '@/lib/type'
 import React from 'react'
