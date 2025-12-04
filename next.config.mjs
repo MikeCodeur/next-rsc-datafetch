@@ -17,7 +17,7 @@ const nextConfig = {
     taint: true,
   },
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
 }
 
